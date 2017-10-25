@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/newspaper.png" />
+      <title>আমাদেরনিউজ২৪.কম</title>
+      <link href="css/jquery-ui-1.10.1.css" rel="stylesheet" type="text/css" />
+      <!-- Bootstrap -->
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- font-awesome -->
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <!-- animate css -->
+      <link href="css/animate.min.css" rel="stylesheet">
+      <!-- Fake loader -->
+      <link href="css/fakeLoader.css" rel="stylesheet">
+      <!-- hover css -->
+      <link href="css/hover-min.css" rel="stylesheet">
+      <!-- swipe css -->
+      <link href="Swiper-3.4.2/dist/css/swiper.min.css" rel="stylesheet">
+      <!-- owl-carousel -->
+      <link href="owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+      <link href="owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+      <link href="owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+      <!-- melon datepicker -->
+      <link href="css/melon.datepicker.css" rel="stylesheet" type="text/css" />
+      <!-- style css -->
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="fakeloader"></div>
+         <!-- Top header -->
+         <div class="container">
+            <div class="top_header">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="top-left-menu">
+                        <ul>
+                           <li><a href="#"><i class="fa fa-map-marker"></i> ঢাকা</a>
+                           </li>
+                           <li><a href="#" class="b-l"><i class="fa fa-cloud"></i> ৪৫<sup>ডিগ্রি</sup></a>
+                           </li>
+                           <li><a href="#" class="hidden-xs b-l">সোমবার, ০৬ মার্চ ২০১৭</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- end of /. top left menu -->
+                     <!-- লগইন -->
+                     <a href="#" class="dropdown-toggle btn-login" data-toggle="dropdown">লগ ইন<span class="caret"></span></a>
+                     <ul id="login-dp" class="dropdown-menu">
+                        <li>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 Login via
+                                 <div class="social-buttons">
+                                    <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                 </div>
+                                 or
+                                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                       <div class="help-block text-right"><a href="">Forget the password ?</a>
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label>
+                                       <input type="checkbox"> লগইন এ থাকুন
+                                       </label>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="bottom text-center">
+                                 নতুন ইউজার? <a href="#"><b>রেজিস্টার</b></a>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="dropdown top-btn hidden-xs">
+                        <button type="button" class="btn-lang ripple" data-toggle="dropdown">বাংলা
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languages-switchr">
+                           <li><a href="#">ENGLISH</a>
+                           </li>
+                           <li><a href="#">Chaines</a>
+                           </li>
+                           <li><a href="#">Arabic</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="header-social hidden-xs">
+                        <ul>
+                           <li><a href="#"><i class="fa fa-facebook hvr-bounce-in"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-twitter hvr-bounce-in"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-instagram hvr-bounce-in"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-youtube-play hvr-bounce-in"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- end of /. header social -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Logo banner -->
+         <div class="mid_headder">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12 col-sm-8">
+                     <div class="header_logo">
+                        <img src="images/logo.jpg" class="img-responsive img-logo" alt="logo">
+                     </div>
+                  </div>
+                  <div class="col-sm-4 hidden-xs">
+                     <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="খবর সার্চ করুন...">
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                     </div>
+                     <!-- /input-group -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         <!-- /.Logo banner -->
+         <!-- Navber -->
+         <div class="container">
+            <div class="hidden-xs">
+               <div class="newstricker_inner">
+                  <div class="trending"><strong>শিরোনাম</strong>
+                  </div>
+                  <div id="NewsTicker" class="owl-carousel owl-theme">
+                     <div class="item">
+                        <a href="#">ইন্টার্ন চিকিৎসকদের কর্মবিরতি প্রত্যাহার</a>
+                     </div>
+                     <div class="item">
+                        <a href="#">পাকিস্তান-আফগান সীমান্তে জঙ্গি হামলায় ৫ সেনাসহ নিহত ১৫</a>
+                     </div>
+                     <div class="item">
+                        <a href="#">জাকার্তার উদ্দেশ্যে ঢাকা ত্যাগ করেছেন প্রধানমন্ত্রী</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <nav class="navbar navbar-default">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <!--<a class="navbar-brand" href="#">Brand</a>-->
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                     <li class="active hvr-sweep-to-right"><a href="#">হোম<span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="hvr-sweep-to-right"><a href="#">জাতিও</a>
+                     </li>
+                     <li class="hvr-sweep-to-right"><a href="#">রাজনীতি</a>
+                     </li>
+                     <li class="hvr-sweep-to-right"><a href="#">আন্তর্জাতিক</a>
+                     </li>
+                     <li class="hvr-sweep-to-right"><a href="#">অর্থ ও বাণিজ্য</a>
+                     </li>
+                     <li class="hvr-sweep-to-right"><a href="#">খেলাধুলা</a>
+                     </li>
+                     <li class="hvr-sweep-to-right"><a href="#">বিনোদন</a>
+                     </li>
+                     <li class="hvr-sweep-to-right"><a href="#">বিজ্ঞান ও প্রযুক্তি</a>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">অন্যান্য<span class="caret"></span></a>
+                        <ul class="dropdown-menu animated bounceIn">
+                           <li><a href="#">অপরাধ</a>
+                           </li>
+                           <li><a href="#">আইটি</a>
+                           </li>
+                           <li><a href="#">ফোকাস</a>
+                           </li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">শিক্ষা</a>
+                           </li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">নারী </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <!-- /.navbar-collapse -->
+            </nav>
+         </div>
+         <!-- /.container -->
+      </header>
+      <!-- NewsTicker-->
+      <div class="main_content">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8">
+                  <main>
+                     <div class="banner">
+                        <img src="images/baner-1.jpg" class="img-responsive" alt="">
+                     </div>
+                     <div class="category-content">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <div class="section-top-bar shadow-1">
+                                 <h4>জীবনযাপন</h4>
+                              </div>
+                              <div class="post_cat_inner shadow-1">
+                                 <img src="images/category-1.jpg" class="img-responsive" alt="">
+                                 <div class="post_content">
+                                    <div class="post_title">
+                                       <h3><a href="#">কী ঘটবে শাহজাদা মুস্তাফার ভাগ্যে?</a></h3>
+                                    </div>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> ২৪ সেপ্টেম্বর ২০১৭ </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p class="post-cat-details">‘সুলতান সুলেমান’ সিরিজের অন্যতম গুরুত্বপূর্ণ চরিত্র ‘শাহজাদা মুস্তাফা’ পর্বের সমাপ্তি ঘটছে। ‘ইব্রাহীম পাশা’র পর এই চরিত্রটির ব্যাপারে দর্শকের আগ্রহ ছিল সবচেয়ে বেশি। এবার ‘শাহজাদা মুস্তাফা’ চরিত্রের পরিণতি ঘটতে যাচ্ছে। কী ঘটবে? এরই মধ্যে জানা হয়ে গেছে, সুলতান সুলেমানের অন্দরমহলের ষড়যন্ত্র চরমে পৌঁছে গেছে।এই ষড়যন্ত্রের জালে নিজেকে জড়িয়ে ফেলেছেন সুলতান সুলেমান। এই ষড়যন্ত্রের চূড়ান্ত পরিণতি শাহজাদা মুস্তাফাকে হত্যা। গল্পে এবার সুলতান সুলেমানের নির্দেশেই তেমন পরিণতি ঘটতে যাচ্ছে। ...</p>
+                                    <a href="" title="" class="read-cat-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="section-top-bar shadow-1">
+                                 <h4>জীবনযাপন</h4>
+                              </div>
+                              <div class="post_inner shadow-1">
+                                 <img src="images/post-1.jpg" class="img-responsive" alt="">
+                                 <div class="post_content">
+                                    <div class="post_title">
+                                       <h3><a href="#">লিভারপুলের বিপক্ষে অভিষেক ‘বাংলাদেশে’র হামজার</a></h3>
+                                    </div>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ৩০, ২০১৭ </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>১৫ হাজার</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">১২৪</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p class="text-justify post-details">
+                                       পরশু লিভারপুলের বিপক্ষে লেস্টার সিটির হয়ে অভিষেক হলো হামজার। ছবি: বিবিসি উইলফ্রেড এনদিদির বদলি হয়ে যখন মাঠে নামছিলেন হামজা দেওয়ান চৌধুরী, ধারাভাষ্যকারের কণ্ঠে উঠে এল ‘বাংলাদেশ’। লেস্টার সিটির জার্সিতে গত পরশু অভিষেক হলো হামজার। ১৯ বছর বয়সী মিডফিল্ডারের পরিচয় দিত... 
+                                    </p>
+                                 </div>
+                                 <a href="" title="" class="aside-read-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="section-top-bar shadow-1">
+                                 <h4>জীবনযাপন</h4>
+                              </div>
+                              <div class="post_inner shadow-1">
+                                 <img src="images/post-1.jpg" class="img-responsive" alt="">
+                                 <div class="post_content">
+                                    <div class="post_title">
+                                       <h3><a href="#">লিভারপুলের বিপক্ষে অভিষেক ‘বাংলাদেশে’র হামজার</a></h3>
+                                    </div>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ৩০, ২০১৭ </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>১৫ হাজার</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">১২৪</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p class="text-justify post-details">
+                                       পরশু লিভারপুলের বিপক্ষে লেস্টার সিটির হয়ে অভিষেক হলো হামজার। ছবি: বিবিসি উইলফ্রেড এনদিদির বদলি হয়ে যখন মাঠে নামছিলেন হামজা দেওয়ান চৌধুরী, ধারাভাষ্যকারের কণ্ঠে উঠে এল ‘বাংলাদেশ’। লেস্টার সিটির জার্সিতে গত পরশু অভিষেক হলো হামজার... 
+                                    </p>
+                                 </div>
+                                 <a href="" title="" class="aside-read-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="section-top-bar shadow-1">
+                                 <h4>জীবনযাপন</h4>
+                              </div>
+                              <div class="post_inner shadow-1">
+                                 <img src="images/post-1.jpg" class="img-responsive" alt="">
+                                 <div class="post_content">
+                                    <div class="post_title">
+                                       <h3><a href="#">লিভারপুলের বিপক্ষে অভিষেক ‘বাংলাদেশে’র হামজার</a></h3>
+                                    </div>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ৩০, ২০১৭ </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>১৫ হাজার</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">১২৪</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p class="text-justify post-details">
+                                       পরশু লিভারপুলের বিপক্ষে লেস্টার সিটির হয়ে অভিষেক হলো হামজার। ছবি: বিবিসি উইলফ্রেড এনদিদির বদলি হয়ে যখন মাঠে নামছিলেন হামজা দেওয়ান চৌধুরী, ধারাভাষ্যকারের কণ্ঠে উঠে এল ‘বাংলাদেশ’। লেস্টার সিটির জার্সিতে গত পরশু অভিষেক হলো হামজার হামজা বাংলাদেশি বংশোদ্ভূত! তাঁর জন্ম।... 
+                                    </p>
+                                 </div>
+                                 <a href="" title="" class="aside-read-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="section-top-bar shadow-1">
+                                 <h4>জীবনযাপন</h4>
+                              </div>
+                              <div class="post_inner shadow-1">
+                                 <img src="images/post-1.jpg" class="img-responsive" alt="">
+                                 <div class="post_content">
+                                    <div class="post_title">
+                                       <h3><a href="#">লিভারপুলের বিপক্ষে অভিষেক ‘বাংলাদেশে’র হামজার</a></h3>
+                                    </div>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ৩০, ২০১৭ </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>১৫ হাজার</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">১২৪</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p class="text-justify post-details">
+                                       পরশু লিভারপুলের বিপক্ষে লেস্টার সিটির হয়ে অভিষেক হলো হামজার। ছবি: বিবিসি উইলফ্রেড এনদিদির বদলি হয়ে যখন মাঠে নামছিলেন হামজা দেওয়ান চৌধুরী, ধারাভাষ্যকারের কণ্ঠে উঠে এল ‘বাংলাদেশ’। লেস্টার সিটির জার্সিতে গত পরশু অভিষেক হলো হামজার। তাঁর জন্ম।... 
+                                    </p>
+                                 </div>
+                                 <a href="" title="" class="aside-read-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="section-top-bar shadow-1">
+                                 <h4>জীবনযাপন</h4>
+                              </div>
+                              <div class="post_inner shadow-1">
+                                 <img src="images/post-1.jpg" class="img-responsive" alt="">
+                                 <div class="post_content">
+                                    <div class="post_title">
+                                       <h3><a href="#">লিভারপুলের বিপক্ষে অভিষেক ‘বাংলাদেশে’র হামজার</a></h3>
+                                    </div>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ৩০, ২০১৭ </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>১৫ হাজার</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">১২৪</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p class="text-justify post-details">
+                                       পরশু লিভারপুলের বিপক্ষে লেস্টার সিটির হয়ে অভিষেক হলো হামজার। ছবি: বিবিসি উইলফ্রেড এনদিদির বদলি হয়ে যখন মাঠে নামছিলেন হামজা দেওয়ান চৌধুরী, ধারাভাষ্যকারের কণ্ঠে উঠে এল ‘বাংলাদেশ’। লেস্টার সিটির জার্সিতে গত পরশু অভিষেক হলো হামজার জন্ম।... 
+                                    </p>
+                                 </div>
+                                 <a href="" title="" class="aside-read-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="section-top-bar shadow-1">
+                                 <h4>জীবনযাপন</h4>
+                              </div>
+                              <div class="post_inner shadow-1">
+                                 <img src="images/post-1.jpg" class="img-responsive" alt="">
+                                 <div class="post_content">
+                                    <div class="post_title">
+                                       <h3><a href="#">লিভারপুলের বিপক্ষে অভিষেক ‘বাংলাদেশে’র হামজার</a></h3>
+                                    </div>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ৩০, ২০১৭ </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>১৫ হাজার</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">১২৪</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p class="text-justify post-details">
+                                       পরশু লিভারপুলের বিপক্ষে লেস্টার সিটির হয়ে অভিষেক হলো হামজার। ছবি: বিবিসি উইলফ্রেড এনদিদির বদলি হয়ে যখন মাঠে নামছিলেন হামজা দেওয়ান চৌধুরী, ধারাভাষ্যকারের কণ্ঠে উঠে এল ‘বাংলাদেশ’। লেস্টার সিটির জার্সিতে গত পরশু ংলাদেশি বংশোদ্ভূত! তাঁর জন্ম।... 
+                                    </p>
+                                 </div>
+                                 <a href="" title="" class="aside-read-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="single-recent-post-widget">
+                                 <div class="img-wrapper">
+                                    <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                                    </a>
+                                 </div>
+                                 <div class="post-info">
+                                    <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                           <li class="disabled"><a href="#">«</a>
+                           </li>
+                           <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a>
+                           </li>
+                           <li><a href="#">2</a>
+                           </li>
+                           <li><a href="#">3</a>
+                           </li>
+                           <li><a href="#">4</a>
+                           </li>
+                           <li><a href="#">5</a>
+                           </li>
+                           <li><a href="#">»</a>
+                           </li>
+                        </ul>
+                        <!-- add -->
+                        <div class="banner">
+                           <img src="images/baner-1.jpg" class="img-responsive" alt="">
+                        </div>
+                     </div>
+                  </main>
+               </div>
+               <!-- Right side wraper-->
+               <aside class="col-sm-4">
+                  <!-- add -->
+                  <div class="banner">
+                     <a href="#"><img src="images/baner-2.jpg" class="img-responsive center-block" alt="">
+                     </a>
+                  </div>
+                  <!-- Social icon -->
+                  <div class="news_widget">
+                     <div class="section-top-bar shadow-1">
+                        <h4>সর্বশেষ খবর</h4>
+                     </div>
+                     <!-- Nav pills -->
+                     <ul class="nav nav-pills shadow-1">
+                        <li class="active"><a href="#tab-1" data-toggle="tab">বাংলাদেশ</a>
+                        </li>
+                        <li><a href="#tab-2" data-toggle="tab">রাজনীতি</a>
+                        </li>
+                        <li><a href="#tab-3" data-toggle="tab">খেলাধুলা</a>
+                        </li>
+                        <li><a href="#tab-4" data-toggle="tab">সারাদেশ</a>
+                        </li>
+                     </ul>
+                     <!-- Tab panes -->
+                     <div class="tab-content">
+                        <div class="tab-pane active" id="tab-1">
+                           <ul class="news-list">
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">কার্টুনে রোহিঙ্গা সংকট</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">বাংলাদেশের কাছে হেরেই ২০২২</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">বাংলাদেশের যে ‘গোলরক্ষক’ গোলও করতেন</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                           <ul class="news-list">
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">তোমাকে হারাতে চাই না ফাহিম</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">বাংলাদেশের কাছে হেরেই ২০২২</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">বাংলাদেশের যে ‘গোলরক্ষক’ গোলও করতেন</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                           <ul class="news-list">
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">আইফোন টেনকে ঠেকাবে যে</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">বাংলাদেশের কাছে হেরেই ২০২২</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">বাংলাদেশের যে ‘গোলরক্ষক’ গোলও করতেন</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tab-pane" id="tab-4">
+                           <ul class="news-list">
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">টাকা নয়, পেনাল্টি চাই কাভানির</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">তোমাকে হারাতে চাই না ফাহিম</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                 <span class="tab-list-title">তারপরেও নেইমার ‘প্রথম’ নন!</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Latest review -->
+                  <div class="review-inner">
+                     <div class="section-top-bar3 shadow-1">
+                        <h4>নতুন খবর</h4>
+                     </div>
+                     <div class="review-content">
+                        <div class="post_inner shadow-1">
+                           <img src="images/post-1.jpg" class="img-responsive" alt="">
+                           <div class="post_content">
+                              <div class="post_title">
+                                 <h3><a href="#">লিভারপুলের বিপক্ষে অভিষেক ‘বাংলাদেশে’র হামজার</a></h3>
+                              </div>
+                              <div class="entry_meta">
+                                 <ul class="list-inline">
+                                    <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ৩০, ২০১৭ </a>
+                                    </li>
+                                    <li class="views"><a href="#"><i class="fa fa-eye"></i>১৫ হাজার</a>
+                                    </li>
+                                    <li class="comments"><i class="fa fa-comment-o"></i><a href="#">১২৪</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <p class="text-justify post-details">
+                                 পরশু লিভারপুলের বিপক্ষে লেস্টার সিটির হয়ে অভিষেক হলো হামজার। ছবি: বিবিসি উইলফ্রেড এনদিদির বদলি হয়ে যখন মাঠে নামছিলেন হামজা দেওয়ান চৌধুরী, ধারাভাষ্যকারের কণ্ঠে উঠে এল ‘বাংলাদেশ’।১৯ বছর বয়সী মিডফিল্ডারের পরিচয় তাঁর জন্ম।... 
+                              </p>
+                           </div>
+                           <a href="" title="" class="aside-read-more hvr-bounce-in">বিস্তারিত <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        <div class="single-recent-post-widget">
+                           <div class="img-wrapper">
+                              <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                              </a>
+                           </div>
+                           <div class="post-info">
+                              <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                              <div class="entry_meta">
+                                 <ul class="list-inline">
+                                    <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-recent-post-widget">
+                           <div class="img-wrapper">
+                              <a href="#" class="thumb"><img src="images/post-2.jpg" alt="" class="img-responsive">
+                              </a>
+                           </div>
+                           <div class="post-info">
+                              <a href="#" class="title">যেসব কারণে ওয়াই-ফাইয়ের গতি ধীর</a>
+                              <div class="entry_meta">
+                                 <ul class="list-inline">
+                                    <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> জুন ১৫, ২০১৭ </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- add -->
+                  <div class="banner">
+                     <a href="#"><img src="images/baner-2.jpg" class="img-responsive center-block" alt="">
+                     </a>
+                  </div>
+                  <!-- Latest items news -->
+                  <div class="items-inner">
+                     <div class="section-top-bar shadow-1">
+                        <h4> সোশ্যাল </h4>
+                     </div>
+                     <div class="itms-content">
+                        <ul class="social-media clearfix">
+                           <li>
+                              <a href="#" class="rss">
+                                 <i class="fa fa-rss"></i>
+                                 <div>2,035</div>
+                                 <p>Subscribers</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="fb">
+                                 <i class="fa fa-facebook"></i>
+                                 <div>3,794</div>
+                                 <p>Fans</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="g_plus">
+                                 <i class="fa fa-google-plus"></i>
+                                 <div>941</div>
+                                 <p>Followers</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="you_tube">
+                                 <i class="fa fa-youtube-play"></i>
+                                 <div>7,820</div>
+                                 <p>Subscribers</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="twitter">
+                                 <i class="fa fa-twitter"></i>
+                                 <div>1,562</div>
+                                 <p>Followers</p>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="pint">
+                                 <i class="fa fa-pinterest"></i>
+                                 <div>1,310</div>
+                                 <p>Followers</p>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Categories -->
+                  <div class="categories_inner">
+                     <div class="section-top-bar shadow-1">
+                        <h4>সবচেয়ে আলোচিত খবর</h4>
+                     </div>
+                     <!-- Swiper -->
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="news-card shadow-1 m-l-r">
+                                 <div class="news-card-img">
+                                    <img src="images/post-1.jpg" class="img-responsive news-post-img" alt="">
+                                 </div>
+                                 <div class="post-card-details">
+                                    <h4><a href="#">সাতক্ষীরা জেলা বিএনপি’র রউফ গ্রেফতার</a></h4>
+                                    <div class="entry_meta">
+                                       <ul class="list-inline">
+                                          <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a>
+                                          </li>
+                                          <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a>
+                                          </li>
+                                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                     </div>
+                  </div>
+                  <!-- add -->
+                  <div class="banner">
+                     <a href="#"><img src="images/baner-2.jpg" class="img-responsive center-block" alt="">
+                     </a>
+                  </div>
+                  <!-- newstop -->
+                  <div class="section-top-bar2 shadow-1">
+                     <h4>আবহাওয়া</h4>
+                  </div>
+                  <div class="tags-inner shadow-1">
+                     <a class="ui tag">খেলাধুলা</a>
+                     <a class="ui tag">ফ্যাশন</a>
+                     <a class="ui tag">বাংলাদেশ</a>
+                     <a class="ui tag">রাজনীতি</a>
+                     <a class="ui tag">সারাদেশ</a>
+                     <a class="ui tag">বিশ্ব</a>
+                     <a class="ui tag">জাতীয়</a>
+                     <a class="ui tag">বিনোদন</a>
+                     <a class="ui tag">ফিচার</a>
+                     <a class="ui tag">শিল্পও সাহিত্য</a>
+                  </div>
+               </aside>
+            </div>
+         </div>
+      </div>
+      <!-- footer section -->
+      <div class="footer_nav_inner hidden-xs">
+         <div class="container">
+            <div class="col-sm-12">
+               <ul class="footer-list">
+                  <li>
+                     <a href="/html/" class="left-side"><img src="images/logo.png" class="img-responsive img-footer">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/html/" class="m-t-10"><img src="images/app.png" class="img-responsive img-footer">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <footer class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8 hidden-xs">
+                  <div class="footer-items">
+                     <h3 class="f_title">খবর</h3>
+                     <ul class="footer-news">
+                        <li>
+                           <a href="/html/"></a>বাংলাদেশ
+                        </li>
+                        <li>
+                           <a href="/html/"></a>সারাদেশ
+                        </li>
+                        <li>
+                           <a href="/html/"></a>খেলাধুলা
+                        </li>
+                        <li>
+                           <a href="/html/"></a>রাজনীতি
+                        </li>
+                        <li>
+                           <a href="/html/"></a>বিনোদন
+                        </li>
+                        <li>
+                           <a href="/html/"></a>আইটি
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="footer-items">
+                     <h3 class="f_title">ঠিকানা</h3>
+                  </div>
+                  <address>
+                     সম্পাদক ও প্রকাশক: মতিউর রহমান,<br>
+                     সিএ ভবন, ১০০ কাজী নজরুল ইসলাম অ্যাভেনিউ, কারওয়ান বাজার, ঢাকা ১২১৫<br>
+                     <abbr title="Phone">ফোন :</abbr> ৮১৮০০৭৮-৮১, ফ্যাক্স: ৯১৩০৪৯৬ 
+                     <a href="mailto:#"> ইমেইল: info@prothom-alo.infom</a>
+                  </address>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="b-b"></div>
+                     <p>Copyright © 2017 আমাদের নিউজ ২৪ All Rights Reserved</p>
+                  </div>
+                  <div class="col-sm-6 hidden-xs">
+                     <div class="footer-menu">
+                        <ul class="nav unstyled">
+                           <li><a href="#">Site Terms</a>
+                           </li>
+                           <li><a href="#">Privacy</a>
+                           </li>
+                           <li><a href="#">Advertisement</a>
+                           </li>
+                           <li><a href="#">Cookies Policy</a>
+                           </li>
+                           <li><a href="#">Contact Us</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- jQuery  -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-ui-1.10.1.min.js" type="text/javascript"></script>
+      <!-- Bootstrap js -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <!-- video js -->
+      <script src="Swiper-3.4.2/dist/js/swiper.min.js"></script>
+      <!-- fake loader js -->
+      <script src="js/fakeLoader.min.js"></script>
+      <script src="owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+      <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <!-- Initialize Swiper -->
+      <!-- Initialize Swiper -->
+      <script>
+         var swiper = new Swiper('.swiper-container', {
+             pagination: '.swiper-pagination',
+             nextButton: '.swiper-button-next',
+             prevButton: '.swiper-button-prev',
+             paginationClickable: true,
+             spaceBetween: 30,
+             centeredSlides: true,
+             autoplay: 3000,
+             autoplayDisableOnInteraction: false
+         });
+      </script>
+      <script>
+         $(document).ready(function() {
+             $(".fakeloader").fakeLoader({
+                 timeToHide: 1200,
+                 bgColor: "#03A9F4",
+                 spinner: "spinner3"
+             });
+         });
+      </script>
+   </body>
+</html>
